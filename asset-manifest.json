@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Seobility_test/static/css/main.d0ed64fc.css",
+    "main.js": "/Seobility_test/static/js/main.2fb7069e.js",
+    "static/js/787.9fa6aaa2.chunk.js": "/Seobility_test/static/js/787.9fa6aaa2.chunk.js",
+    "index.html": "/Seobility_test/index.html",
+    "main.d0ed64fc.css.map": "/Seobility_test/static/css/main.d0ed64fc.css.map",
+    "main.2fb7069e.js.map": "/Seobility_test/static/js/main.2fb7069e.js.map",
+    "787.9fa6aaa2.chunk.js.map": "/Seobility_test/static/js/787.9fa6aaa2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0ed64fc.css",
+    "static/js/main.2fb7069e.js"
+  ]
+}
