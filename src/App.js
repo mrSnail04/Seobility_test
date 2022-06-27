@@ -29,7 +29,8 @@ function App() {
     }, [nameError, emailError, phoneError, dateError, messageError, loading])
 
     const i = axios.create({
-        baseURL: "http://localhost:3001",
+        // baseURL: "http://localhost:3001",
+        baseURL: "https://my-json-server.typicode.com/mrSnail04/json_server_seobility",
         withCredentials: true,
         headers: {
             'Content-Type': 'application/json',
@@ -40,7 +41,8 @@ function App() {
         setServerSuccess('');
         setServerError('');
         setLoading(true)
-        return i.post('/report/', {
+        return i.post('/data/', {
+                id: 1,
                 name: name,
                 email: email,
                 phone: phone,
@@ -50,13 +52,15 @@ function App() {
             .then((response) => {
                 if (response?.data){
                     setLoading(false)
-                    setServerSuccess(response.data.message)
+                    // Ответ от сервера с полем 'success'
+                    // setServerSuccess(response.data.success)
+                    setServerSuccess("Успешно отправленно")
                     resetForms()
                 }
                 return response;
             }, (error) => {
                 setLoading(false)
-                setServerError(error.response.data.message)
+                setServerError(error.response.data.error)
             });
     };
 
